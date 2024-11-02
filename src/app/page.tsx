@@ -1,101 +1,93 @@
 import Image from "next/image";
 
+
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div>
+       <nav className="container mx-auto xl:widt-[1440px] py-9 grid grid-cols-2">
+      <div className="logo"><img src="/Group 11.png" alt="" /></div>
+      <div className="nav-links">
+        <ul className="flex justify-between">
+          <li><a href="#!">MAIN</a></li>
+          <li><a href="#1">GALLERY</a></li>
+          <li><a href="#1">PROJECTS</a></li>
+          <li><a href="#1">CERTIFICATIONS</a></li>
+          <li><a href="#1">CONTACTS</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section className="container xl:width-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 items-center mb-20">
+      <div className="hero-heading">
+        <h1 className="xl:text-[64px] text-[32px] md:text-[50px] leading-[50px] text-center md:text-start  text-[#BDBDBD] font-light">
+          PROJECT <br />
+          <span className="text-black font-bold">Lorem</span>
+        </h1>
+        <br />
+      </div>
+      <div className="hero-img">
+        <img src="/Rectangle 6.png" alt="" />
+      </div>
+    </section>
+    <section className="container xl:width-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 md:gap-x-4 mt-10">
+      <div className="grid grid-cols-2 gap-x-2"><div className=""><img  src="/Rectangle 8.png" alt=""/><img className="py-3" src="/Rectangle 10.png" alt=""/></div><div className="mt-8"><img src="/Rectangle 9.png" alt=""/></div></div>
+      <div className="">
+        <h1 className="xl:text-[64px] text-[32px] md:text-[50px] text-[#BDBDBD] font-light text-center md:text-start mt-5 md:mt-0">About</h1>
+        <p className="xl:pe-44 mt-5 md:mt-3 xl:mt-5 text-center md:text-start">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged.
+        </p>
+        <button className=" w-[100%] mx-auto  md:w-[222px] h-[71px] bg-gray-50 mt-14 md:mt-3 xl:mt-14">READ MORE</button>
+      </div>
+    </section>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+    <section className="container xl:width-[1440px] mx-auto my-10 "><h1 className="xl:text-[64px] text-[32px] md:text-[50px] text-center text-start  font-light text-[#BDBDBD]">Main Focus/Mission Statement</h1>
+    <div className="grid grid-cols-2 mt-5"><div className=" xl:grid grid-cols-6"><img className="xl:col-span-1" src="/1 (1).png" alt=""/><p className="xl:col-span-2 xl:leading-[38px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur, lectus et facilisis placerat.</p></div>
+    <div className=" xl:grid grid-cols-6"><img className="xl:col-span-1" src="/2 (1).png" alt=""/><p  className="xl:col-span-3 xl:ms-9 xl:leading-[38px]">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur, lectus et facilisis placerat, magna mauris porttitor tortor, a auctor est felis ut nisl.</p></div></div>
+        </section>
+
+
+         {/* Projects section  */}
+         <section className="container xl:width-[1440px] mx-auto my-10">
+          <h1 className="xl:text-[64px] text-[32px] md:text-[50px] text-center md:text-start font-light text-[#BDBDBD]">Our Projects</h1>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-x-10 gap-y-10 mt-10"><div className="md:col-span-2 relative"><img className="w-full hover:brightness-75" src="/Rectangle 12.png" alt=""/><div className="absolute top-4">asd</div></div>
+          <div className="md:col-span-2 "><img className="w-full" src="/image 15.png" alt=""/></div>
+          <div className="md:col-span-1"><img className="w-full h-[80%]" src="/image 16.png" alt=""/></div>
+          <div className="md:col-span-2"><img className="w-full  h-[80%]" src="/image 17.png" alt=""/></div>
+          <div className="md:col-span-1"><img className="w-full h-[80%]" src="/image 18.png" alt=""/></div></div>
+         </section>
+
+
+         <section className="container xl:width-[1440px] mx-auto">
+          <h1 className="xl:text-[64px] text-[32px] md:text-[50px] text-center md:text-start text-[#BDBDBD] font-light">Contact Us</h1>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-y-10 gap-x-3 mt-5"><div><form className="grid grid-cols-1 gap-y-4" action=""><input className="h-12 bg-[#F3F3F3] ps-6" type="text" placeholder="Name"/><input className="h-12 bg-[#F3F3F3] ps-6" type="number" name="" id="" placeholder="Phone Number*" required/><input className="h-12 bg-[#F3F3F3] ps-6" type="email" name="" id="" placeholder="E-mail*" required/><input className="h-12 bg-[#F3F3F3] ps-6 " type="text" name="" id="" placeholder="Interested-In"/><textarea className="bg-[#F3F3F3] ps-6 pt-5 resize-none h-[200px]  md:h-[160%]  xl:h-[160px]" name="" id="" placeholder="Message*" required></textarea></form><button className="bg-[#333333] w-[100%] mx-auto  md:w-[222px] h-[71px] mt-20 text-white">SEND EMAIL</button></div>
+          <div className="col-span-2"><img className="col-span-1 w-full " src="/image 12.png" alt=""/></div></div>
+          
+         </section>
+
+
+         <footer className=" xl:width-[1440px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-y-20 mt-10 text-white bg-[#333333] ps-9 py-20">
+<img className="" src="/Group 11 1.png" alt="logo"/>
+<ul className="grid gap-y-4"><li><h2 className="pb-5">Information</h2></li>
+<li>Main</li>
+<li>Gallery</li>
+<li>Projects</li>
+<li>Certifications</li>
+<li>Contacts</li></ul>
+<ul className="grid gap-y-4"><li><h2 className="pb-5">Contacts</h2></li>
+<li>1234 Sample Street <br />
+  Austin Texas 78704</li>
+<li>512.333.2222</li>
+<li>sampleemail@gmail.com</li></ul>
+<ul className=""><li><h2 className=" pb-5">Social Media</h2></li>
+<li><img className="inline-block " src="/icons/facebook.svg" alt=""/> <img className="inline-block ps-5" src="/icons/Shape.svg" alt=""/><img className="inline-block ps-5" src="/icons/Linked In.svg" alt=""/><img className="inline-block ps-5" src="/icons/pininterest.svg" alt=""/></li></ul>
+        </footer>
+
+
     </div>
   );
 }
